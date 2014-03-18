@@ -11,6 +11,7 @@ body {
 /* INTRODUCTION - BONJOUR! - Blur effect */
 
 /* General */
+/* before 768 pixiel */
 .dof{
 	position: relative;
 	height: 100%;
@@ -143,6 +144,7 @@ body {
 				background-size: cover;
 			}
 
+/* Display after 768 pixel */
 
 
 /* Project - Nike */
