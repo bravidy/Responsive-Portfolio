@@ -233,7 +233,7 @@ body {
 		margin-bottom: 30px;
 	}
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1170px) {
 #boobstagram{
 	background: #ff8282 url('../../datas/img/web-display/projets/Project-boobstagram-right1024.png') no-repeat right;
 	background-size: cover 100%;
@@ -244,10 +244,9 @@ body {
 }
 }
 
-
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 970px) {
 #boobstagram{
-	background: #ff8282 url('../../datas/img/web-display/projets/Project-boobstagram-right1024.png') no-repeat right;
+	background: #ff8282 url('../../datas/img/web-display/projets/Project-boobstagram-right-middle.png') no-repeat right;
 	background-size: cover 100%;
 }
 
@@ -257,7 +256,7 @@ body {
 }
 
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
 #boobstagram{
 	height: 700px;
 	width: 100%;
@@ -356,14 +355,14 @@ body {
 }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 970px) {
 #spotify-alarm{
 	background: #9ec04e url('../../datas/img/web-display/projets/Project-spotify-alarm-background.png') no-repeat center bottom;
 	background-size: auto 100%;
 }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 750px) {
 .personal-project-spotify{
 	background: #9ec04e;
 	height: 740px;
@@ -467,8 +466,23 @@ body {
 	background-size: auto 90%;
 }
 }
+@media only screen and (max-width: 1000px) {
+#snake-app{
+	background: #f1f1f1 url('../../datas/img/web-display/projets/Project-snake.png') no-repeat left;
+	background-size: auto 85%;
+}
 
-@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 970px) {
+
+#snake-app{
+	background: #f1f1f1 url('../../datas/img/web-display/projets/Project-snake-crop.png') no-repeat left;
+	background-size: auto 90%;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
 
 .project-desription-snake{
 	margin-top: 40px;
