@@ -8,102 +8,49 @@ body {
 }
 
 
-/* Full page image Header - Bonjour */
+/* INTRODUCTION - BONJOUR! - Blur effect */
 
-.header {
-  display: table;
-  height: 63%;
-  width: 100%;
-  position: relative;
-  background: url('../../datas/img/web-display/Header/story1.jpg') no-repeat center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+/* General */
+.dof{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: table;
 }
 
-
-@media only screen and (max-width: 768px) {
-	.header {
-		display: none !important;
+	.holder{
+		display: table;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		width: 100% !important;
+		z-index: 125;
 	}
-}
 
-@media only screen and (max-width: 320px) {
-	.header {
-		display: none !important;
+	.intro-body-bio{
+		display: table-cell;
+		vertical-align: bottom;
 	}
-}
+	
+/* Text part */
 
-
-/* Intro */
-
-#facemobiledisplay .picture-mobile-display{
-	display: none !important;
-}
-
-.intro {
-  padding-top: 50px;
-  padding-bottom: 30px;
-  background-color: #F4F4F4;
-}
-
-
-		.face{
-			background: url('../../datas/img/global-design/picture-frame.png')no-repeat center;
-			background-size: cover;
-			
-			width: 170px;
-			height: 170px;
-			margin-top: -135px;
-			
-			border-radius:  0px 2px 3px 0px rgba(10, 10, 10, 0.3);
-			-webkit-box-shadow:  0px 2px 3px 0px rgba(10, 10, 10, 0.3);
-			-moz-box-shadow:  0px 2px 3px 0px rgba(10, 10, 10, 0.3);
-			-o-box-shadow:  0px 2px 3px 0px rgba(10, 10, 10, 0.3);
-			-khtml-box-shadow:  0px 2px 3px 0px rgba(10, 10, 10, 0.3);
-			-ms-box-shadow:  0px 2px 3px 0px rgba(10, 10, 10, 0.3);
-			-chrome-box-shadow:  0px 2px 3px 0px rgba(10, 10, 10, 0.3);
-			
-			border-radius: 85px;
-			-webkit-border-radius: 85px;
-			-moz-border-radius: 85px;
-			-o-border-radius: 85px;
-			-khtml-border-radius: 85px;
-			-ms-border-radius: 85px;
-			-chrome-border-radius: 85px;	
-		}
-		
-		.motion_face{
-			background: url("http://distilleryimage7.ak.instagram.com/e8145fe64d7111e39f7a120b2aae41eb_8.jpg") no-repeat center;
-			background-size: cover;
-			
-			width: 152px;
-			height: 152px;
-			
-			margin-top: 9px;
-			margin-left: -5px;
-			
-			border-radius: 85px;
-			-webkit-border-radius: 85px;
-			-moz-border-radius: 85px;
-			-o-border-radius: 85px;
-			-khtml-border-radius: 85px;
-			-ms-border-radius: 85px;
-			-chrome-border-radius: 85px;
-		}
-
-.titlewebsiteiep{
+.title-name{
+	text-align: center;
 	font-family: 'Sarina';
-	font-size: 31px;
+	font-size: 38px;
 	color: #2DBB9D;
-	padding: 13px 0;
 }
 		
-		.lead{
+			.lead{
+			text-align: center;
 			font-family: 'Source Sans Pro';
 			color: #6D6D6D;
-			font-size: 26px;
+			font-size: 23px;
+			font-weight: 300;
+			
+			padding: 20px 0 0 0;
 		}
 		
 		.prettylinks{
@@ -113,7 +60,7 @@ body {
 		
 		a.prettylinks:hover{
 			color: #2DBB9D;
-			text-decoration: underline;
+			text-decoration: none;
 		}
 		
 		.sociallivestyle{
@@ -129,6 +76,7 @@ body {
 			font-family: 'Source Sans Pro';
 			color: #2DBB9D;
 			text-decoration:none;
+			font-weight: 300;
 			padding-left: 5px;
 			padding-right: 5px;
 		}
@@ -139,79 +87,120 @@ body {
 			text-decoration: underline;
 		}
 
-@media only screen and (max-width: 768px) {
+.btn-scrolling-dow{
+	margin-top: 30px;
+	margin-bottom: 40px;
+	width: 100%;
+	height: 40px;
+	display: block;
+	
+	background: url('../../datas/img/global-design/scrolling-btn.svg') center center no-repeat;
+}
 
-		.face{
-			display: none; !important;
-		}
-		
-		.motion_face{
-			display: none !important;
-		}
+/* Images part */
+.background{
+	height:100%;
+}
+	.cards{
+		display:block;
+		height:100%;
+		width:100%;
+		position:absolute;
+		background-position:center center;
+		background-position: 50% 50%;
+	}
+	
+			.layer1{
+				z-index:120;
+				background:url('../../datas/img/web-display/Header/imageblur-1.jpg') no-repeat center center;
+				display: table;
 				
-		.intro {
-		  padding-top: 16px;
-		  padding-bottom: 30px;
-		  background-color: #F4F4F4;
-		}
-		
-		.titlewebsiteiep{
-			font-family: 'Sarina';
-			font-size: 37px;
-			color: #2DBB9D;
-			padding: 6px 0;
-		}
-		
-		.picture-mobile-display{
-			background: #a28e75;
-			height: 340px;
-		}
-		
-		#facemobiledisplay{
-			background: #a28e75 url('../../datas/img/global-design/face_mobile.png') no-repeat center;
-			background-size: auto 100%;
-		}
-
-}
-
-@media only screen and (max-width: 320px) {
-
-		.face{
-			display: none; !important;
-		}
-		
-		.motion_face{
-			display: none !important;
-		}
-		
-			.titlewebsiteiep{
-				font-family: 'Sarina';
-				font-size: 31px;
-				color: #2DBB9D;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
 			}
-		
-		.picture-mobile-display{
-			background: #a28e75;
-			height: 170px;
-		}
-		
-		#facemobiledisplay{
-			background: #a28e75 url('../../datas/img/global-design/face_mobile.png') no-repeat center;
-			background-size: auto 100%;
-		}
-		
-		.lead{
-			font-family: 'Source Sans Pro';
-			color: #6D6D6D;
-			font-size: 20px;
-		}
-}
+			
+			.layer2{
+				z-index:119;
+				background:url('../../datas/img/web-display/Header/imageblur-2.jpg') no-repeat center center;
+				display: table;
+				
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			
+			.layer3{
+				z-index:118;
+				background:url('../../datas/img/web-display/Header/imageblur-3.jpg') no-repeat center center;
+				display: table;
+
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
 
 
 /* Project - Nike */
 
+/* General */
+.personal-project-nike{
+	background: #000000;
+	height: 610px;
+}
+
+#nike{
+	background: #000000 url('../../datas/img/web-display/projets/Project-nike-background.png') no-repeat center;
+	background-size: auto 100%;
+			
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Text */
+  .title-margin{
+	  padding-top: 20px;
+  }
+
+	.nike-true-logotype{
+		align-content: center center;
+		width: 60px;
+		height: 30px;
+		
+		margin-bottom: 18px;
+	}
+
+	.think-nike{
+		font-family:'Source Sans Pro';
+		color: #FFFFFF;
+		font-size: 40px;
+		font-weight: 500;
+	}
+
+	.bold-nike{
+		font-family:'Source Sans Pro';
+		color: #FFFFFF;
+		font-size: 40px;
+		font-weight: 200;
+	}
+
+/* Images - myCarousel */
+.carousel .carousel-inner .item .nike-design{
+	width: 100%;
+	height: 510px;
+}
+
+
+
 /* Project - Boobstagram */
 
+/* General */
 .personal-project-boobs{
 	background: #ff8282;
 	height: 610px;
@@ -222,6 +211,7 @@ body {
 	background-size: auto 100%;
 }
 
+/* Container text + Text */
 .project-desription-boobs{
 	margin-top: 170px;
 }
@@ -236,7 +226,8 @@ body {
 	.Boobstagram-decription{
 		font-family:'Source Sans Pro';
 		color: #FFFFFF;
-		font-size: 26px;
+		font-size: 23px;
+		font-weight: 300;
 		
 		margin-top: 20px;
 		margin-bottom: 30px;
@@ -339,9 +330,10 @@ body {
 }
 
 .project-spotify-title{
-	font-family:'Source Sans Pro';
+		font-family:'Source Sans Pro';
 		color: #FFFFFF;
-		font-size: 46px;
+		font-size: 40px;
+		font-weight: 500;
 		
 		margin-top: 20px;
 		margin-bottom: 10px;
@@ -350,7 +342,8 @@ body {
 	.spotify-decription{
 		font-family:'Source Sans Pro';
 		color: #FFFFFF;
-		font-size: 26px;
+		font-size: 23px;
+		font-weight: 300;
 		
 		margin-top: 20px;
 		margin-bottom: 10px;
@@ -443,10 +436,11 @@ body {
 }
 
 .project-snake-title{
-	font-family:'Source Sans Pro';
+		font-family:'Source Sans Pro';
 		color: #2ad046;
-		font-size: 46px;
-		
+		font-size: 40px;
+		font-weight: 500;
+	
 		margin-top: 20px;
 		margin-bottom: 10px;
 }
@@ -454,7 +448,8 @@ body {
 	.snake-decription{
 		font-family:'Source Sans Pro';
 		color: #2ad046;
-		font-size: 26px;
+		font-size: 23px;
+		font-weight: 300;
 		
 		margin-top: 20px;
 		margin-bottom: 30px;
@@ -542,6 +537,7 @@ body {
 	font-family: 'Source Sans Pro';
 	color: #6D6D6D;
 	font-size: 16px;
+	font-weight: 300;
 	
 	padding-bottom: 18px;
 }
